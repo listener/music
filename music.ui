@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Music</class>
+ <widget class="QMainWindow" name="Music">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>370</width>
+    <height>409</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MusicPlayer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/Downloads/CoolYing/images/1.png</normaloff>:/Downloads/CoolYing/images/1.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="minimumSize">
+           <size>
+            <width>68</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>68</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Ubuntu Mono</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>当前歌曲</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblMusic">
+          <property name="minimumSize">
+           <size>
+            <width>211</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>70</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="minimumSize">
+           <size>
+            <width>68</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>68</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Ubuntu Mono</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>当前进度</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="locate">
+          <property name="minimumSize">
+           <size>
+            <width>221</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="minimumSize">
+           <size>
+            <width>68</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>68</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Ubuntu Mono</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>当前音量</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="vol">
+          <property name="minimumSize">
+           <size>
+            <width>71</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="minimum">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnPause">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>27</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Play</string>
+            </property>
+            <property name="shortcut">
+             <string>Space</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnStop">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>27</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Next</string>
+            </property>
+            <property name="shortcut">
+             <string>Ctrl+Right</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listMusic">
+        <property name="minimumSize">
+         <size>
+          <width>350</width>
+          <height>248</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Mono</family>
+         </font>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>370</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Configure</string>
+    </property>
+    <addaction name="actionAddfile"/>
+    <addaction name="actionAddFolder"/>
+    <addaction name="separator"/>
+    <addaction name="actionClear"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuPre">
+    <property name="title">
+     <string>Sequence</string>
+    </property>
+    <addaction name="action_once"/>
+    <addaction name="action_repeat"/>
+    <addaction name="action_shuffle"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuPre"/>
+  </widget>
+  <action name="actionAddfile">
+   <property name="text">
+    <string>AddFile</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionAddFolder">
+   <property name="text">
+    <string>AddFolder</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="action_once">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Once</string>
+   </property>
+  </action>
+  <action name="action_repeat">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Repeat</string>
+   </property>
+  </action>
+  <action name="action_shuffle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>shuffle</string>
+   </property>
+  </action>
+  <action name="actionShowList">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>ShowList</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>Music</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>184</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
